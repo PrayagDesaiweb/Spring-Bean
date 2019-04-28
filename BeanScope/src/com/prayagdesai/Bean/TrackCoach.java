@@ -21,6 +21,12 @@ public class TrackCoach implements Coach {
 	}
 	
 	
-
+	public void doInitStuff() {
+		System.out.println("Inside the bean custom init method");
+	}
+	
+	public void doDestroyStuff() {
+		System.out.println("Inside the bean custom destroy method");
+	}
 
 }

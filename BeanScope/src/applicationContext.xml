@@ -3,11 +3,13 @@
 <!-- Define your beans here -->
 <!-- Adding the properties file in the context file --> 
 
-
+	
 <bean class= "com.prayagdesai.Bean.HappyFortuneService" id="myFortuneService"></bean>
 
 
-<bean class="com.prayagdesai.Bean.TrackCoach" id="myCoach" scope="prototype">
+<bean class="com.prayagdesai.Bean.TrackCoach" id="myCoach"
+init-method="doInitStuff"
+destroy-method="doDestroyStuff">
 <constructor-arg ref="myFortuneService"/>
 </bean>
  
