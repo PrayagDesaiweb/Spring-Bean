@@ -7,7 +7,7 @@
 <bean class= "com.prayagdesai.Bean.HappyFortuneService" id="myFortuneService"></bean>
 
 
-<bean class="com.prayagdesai.Bean.TrackCoach" id="myCoach">
+<bean class="com.prayagdesai.Bean.TrackCoach" id="myCoach" scope="prototype">
 <constructor-arg ref="myFortuneService"/>
 </bean>
  
