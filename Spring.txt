@@ -1,0 +1,17 @@
+# Spring-Bean
+Spring bean scopes and life cycle 
+
+What Is bean scope?
+The scope represents the lifecycle of the bean
+Which means 
+1.how ling the bean will live
+2.how many instances are created
+3.how is the bean shared
+Default scope of the bean is singleton. Which means
+Spring container will create one instance of the bean by default, it is cached in the memory, all request to the bean will return shared reference to the same bean.
+
+For explicity defining the scope of the bean use the scope attribute
+Additional spring beans are prototype, request, session, global-session
+
+In the prototype scope, everytime we make a request to the bean, new object (new instance of the bean is created). Prototype is used for taking care of stateful data
+
